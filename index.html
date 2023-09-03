@@ -40,15 +40,33 @@
             </center>
         </div>
         <div class="container-main" id="sect-2">
+            <p style="padding-top:15vh;"></p>
+            <center>
+                <h1>
+                    <span class="text-primary">Why</span>
+                    <span class="text-major">SRMC</span>
+                    <span class="text-most">?</span>
+                </h1>
+            </center>
             <div class="grid">
-                <div class="grid-2">
+                <div class="grid-4">
                     <div class="grid-container bg-secondary">
-                        p
+                        1.
                     </div>
                 </div>
-                <div class="grid-2">
+                <div class="grid-4">
                     <div class="grid-container bg-quad">
-                        s
+                        2.
+                    </div>
+                </div>
+                <div class="grid-4">
+                    <div class="grid-container bg-secondary">
+                        3.
+                    </div>
+                </div>
+                <div class="grid-4">
+                    <div class="grid-container bg-quad">
+                        4.
                     </div>
                 </div>
                 <div style="clear:both"></div>
@@ -59,22 +77,22 @@
     <!--button-->
     <div class="btn-right">
         <div class="circle-border">
-            <div class="circle active"></div>
+            <div class="circle active" id="ball-1"></div>
         </div>
         <div class="circle-border">
-            <div class="circle"></div>
+            <div class="circle" id="ball-2"></div>
         </div>
         <div class="circle-border">
-            <div class="circle"></div>
+            <div class="circle" id="ball-3"></div>
         </div>
         <div class="circle-border">
-            <div class="circle"></div>
+            <div class="circle" id="ball-4"></div>
         </div>
     </div>
     <center>
         <div class="btn-down">
             <span class="scroll-btn">
-                <a href="#">
+                <a href="#" onclick="increment()">
                     <span class="mouse">
                         <span>
                         </span>
@@ -87,7 +105,21 @@
     </center>
 </body>
 <script>
-    curr_ind = 0;
+    curr_ind = 1;
+    limit = 2;
+    function increment(){
+        ind = curr_ind;
+        next = ind+1;
+        if (next > limit){
+            next = 1;
+        }
+        document.getElementById('sect-'+ind).style.display='none';
+        document.getElementById('sect-'+next).style.display='block';
 
+        document.getElementById('ball-'+ind).classList.remove('active');
+        document.getElementById('ball-'+next).classList.add('active');
+
+        curr_ind = next;
+    }
 </script>
 </html>
