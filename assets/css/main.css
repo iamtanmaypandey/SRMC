@@ -1,0 +1,240 @@
+body,
+html,
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    max-width: 100%;
+    background: rgb(238, 237, 237);
+}
+
+/*colors and container */
+:root {
+    --primary: #5585b5;
+    --secondary: #53a8b6;
+    --tertiary: #79c2d0;
+    --quad: #bbe4e9;
+    --major: #f93600;
+    --most: #1a2639;
+    --minor: #8ed2c9;
+    --minost: #fcf4d9;
+    --white: #ffffff;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+.text-tertiary {
+    color: var(--tertiary);
+}
+
+.text-quad {
+    color: var(--quad);
+}
+
+.text-major {
+    color: var(--major);
+}
+
+.text-most {
+    color: var(--most);
+}
+
+.text-minor {
+    color: var(--minor);
+}
+
+.text-minost {
+    color: var(--minost);
+}
+.text-white{
+    color:white;
+}
+
+.bg-primary {
+    background: var(--primary);
+}
+
+.bg-secondary {
+    background: var(--secondary);
+}
+
+.bg-tertiary {
+    background: var(--tertiary);
+}
+
+.bg-quad {
+    background: var(--quad);
+}
+
+.bg-major {
+    background: var(--major);
+}
+
+.bg-most {
+    background: var(--most);
+}
+
+.bg-minor {
+    background: var(--minor);
+}
+
+.bg-minost {
+    background: var(--minost);
+}
+.bg-white{
+    background-color: white;
+}
+/*color ends*/
+
+
+
+/*navigation menu*/
+.nav-outer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.nav-outer nav {
+    background: rgb(255, 255, 255);
+    z-index: 999;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: fixed;
+    width: 90%;
+    border-radius: 70px;
+}
+
+.nav-outer nav .container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*body gapping*/
+.main {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*setting font sizes*/
+.tanmay-tiny {
+    font-size: 10px !important
+}
+
+.tanmay-small {
+    font-size: 12px !important
+}
+
+.tanmay-medium {
+    font-size: 15px !important
+}
+
+.tanmay-large {
+    font-size: 18px !important
+}
+
+.tanmay-xlarge {
+    font-size: 24px !important
+}
+
+.tanmay-xxlarge {
+    font-size: 36px !important
+}
+
+.tanmay-xxxlarge {
+    font-size: 48px !important
+}
+
+.tanmay-jumbo {
+    font-size: 64px !important
+}
+
+/*right-nav-btn*/
+.btn-right{
+    top:70vh;
+    right:20px;
+    position: fixed;
+}
+.circle-border{
+    padding-top:5px;
+}
+.circle{
+    height:10px;
+    width:10px;
+    border-radius: 50%;
+    background-color:var(--minor);
+}
+.active{
+    background-color: var(--major)!important;
+}
+.btn-down{
+    padding-top:20px;
+}
+
+.btn-down-fa{
+    padding-top:8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+}
+/*defining boxes*/
+.box{
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+.container-main{
+    max-height: 100vh !important;    
+}
+
+/*grids*/
+.grid .grid-3{
+    width:30.83%;
+    padding-left: 1.25%;
+    padding-right: 1.25%;
+    float:left;
+}
+.grid .grid-4{
+    width:22.5%;
+    padding-left: 1.25%;
+    padding-right: 1.25%;
+    float:left;
+}
+.grid .grid-2{
+    width:47.5%;
+    padding-left: 1.25%;
+    padding-right: 1.25%;
+    float:left;
+}
+.grid .grid-5{
+    width:17.5%;
+    padding-left: 1.25%;
+    padding-right: 1.25%;
+    float:left;
+}
+.grid .grid-container{
+    padding-left:5px;
+    padding-right: 5px;
+    border-radius: 20px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+/*off all sections*/
+#sect-2,#sect-3,#sect-4{
+    display: none;
+}
