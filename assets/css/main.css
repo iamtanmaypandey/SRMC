@@ -352,3 +352,16 @@ body {
 .btn-down p{
     margin-left: -60px;
 }
+.menu-hidden{
+    /*display:hidden;*/
+    justify-content: center;
+    display: inline-block;
+}
+.menu{
+    display: none;
+    padding-top:15px;
+    padding-bottom: 20px;
+}
+#close{
+    display: none;
+}

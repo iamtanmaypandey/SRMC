@@ -6,8 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <link href='./assets/css/main.css?v=1.1.1' rel="Stylesheet">
-    
+    <link href='./assets/css/main.css?v=1.1.2' rel="Stylesheet">
+    <link href='./assets/css/all.css?v=1.1.2' rel="Stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -18,11 +18,38 @@
         <nav class="navbar navbar-expand-lg navbar-light" data-offset-top="0" data-spy="affix">
             <div class="container">
                 <h3>
-                    <div style="float:left;width:90%;">SRMC | <small>IISER Mohali</small></div>
-                    <div style="float:left;"><i class="fa fa-bars"></i></div>
+                    <div id="logo" style="float:left;width:90%">SRMC | <small>IISER Mohali</small></div>
+                    <div id="blocks" style="float:left;width:10%;">
+                        <span onclick="menu()">
+                            <i id="open" class="fa fa-bars"></i>
+                            <i id="close" class="fa fa-times"></i>
+                        </span>
+                        
+                    </div>
                     <div style="clear:both"></div>
+                    <div class="menu grid" id="menu">
+                        <center>
+                            <div class="grid-5">
+                                <a href="#">Home</a>
+                            </div>
+                            <div class="grid-5">
+                                <a href="#">Menu</a>
+                            </div>
+                            <div class="grid-5">
+                                <a href="#">SRMC</a>
+                            </div>
+                            <div class="grid-5">
+                                <a href="#">SRMV</a>
+                            </div>
+                            <div class="grid-5">
+                                <a href="#">SMRF</a>
+                            </div>
+                        </center>
+                    </div>
                 </h3>
             </div>
+
+
         </nav>
     </div>
     <!--Navigation menu ends here-->
@@ -100,26 +127,43 @@
                 </a>
                 <p>Click here</p>
             </span>
-            
+
         </div>
     </center>
+
 </body>
 <script>
     curr_ind = 1;
     limit = 2;
-    function increment(){
+    function increment() {
         ind = curr_ind;
-        next = ind+1;
-        if (next > limit){
+        next = ind + 1;
+        if (next > limit) {
             next = 1;
         }
-        document.getElementById('sect-'+ind).style.display='none';
-        document.getElementById('sect-'+next).style.display='block';
+        document.getElementById('sect-' + ind).style.display = 'none';
+        document.getElementById('sect-' + next).style.display = 'block';
 
-        document.getElementById('ball-'+ind).classList.remove('active');
-        document.getElementById('ball-'+next).classList.add('active');
+        document.getElementById('ball-' + ind).classList.remove('active');
+        document.getElementById('ball-' + next).classList.add('active');
 
         curr_ind = next;
     }
+    menustate = false;
+    function menu(){
+        if (menustate==false){
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('open').style.display = 'none';
+            document.getElementById('close').style.display = 'block';
+            menustate = true;
+        }
+        else{
+            document.getElementById('menu').style.display = 'none';
+            document.getElementById('open').style.display = 'block';
+            document.getElementById('close').style.display = 'none';
+            menustate = false;
+        }
+    }
 </script>
+
 </html>
