@@ -372,6 +372,8 @@ body {
         padding-left: 2.5%!important;
         padding-right: 2.5%!important;
         float: left!important;
+        padding-top:10px;
+        padding-bottom: 10px;
     }
 
     .grid .grid-container {
